@@ -15,6 +15,9 @@ var Zepto=function(){function A(t){return null==t?String(t):E[j.call(t)]||"objec
 $('#test').on('swipe', function(e) {
   alert('此浏览器支持swipe');
 });
+$('#test').on('touchmove', function(e) {
+  e.preventDefault();
+});
 </script>
 </body>
 </html>
